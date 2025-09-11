@@ -1,0 +1,71 @@
+body {
+    background: url(images/Login_bg_lg.png) repeat-x;
+    background-color: #006EB7;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+	padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+	justify-content:center;
+	align-items: center;
+}
+.images{
+	display: flex;
+	gap:30px;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+}
+.form-input {
+	padding:40px 20px 20px 20px;
+	background: #f7f7f7;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 90px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+    border:5px solid #6bb9f0;
+}
+.image-student {
+    position: absolute;
+    top: -30px;  
+    right: 20px; 
+}
+.form-input input[type="text"],
+.form-input input[type="password"] {
+    width: 200px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.form-input input[type="submit"] {
+    background-color: #006EB7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-input input[type="submit"]:hover {
+    background-color: #004f8c;
+}
+input{
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+}
+.footer{
+    text-align: center;       
+    margin-top: 40px;         
+    padding: 20px;            
+    color: white;             
+    font-size: 12px;
+}
+a{
+	text-decoration: none;
+}
