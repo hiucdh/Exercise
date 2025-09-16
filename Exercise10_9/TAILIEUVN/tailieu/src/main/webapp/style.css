@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fbead5;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.category {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.category:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.search {
+    margin: 0 10px;
+    /* thu hẹp khoảng cách */
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    max-width: 400px;
+    /* không quá dài */
+    padding: 8px 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search input:focus {
+    border-color: #66a3ff;
+    box-shadow: 0 0 0 3px rgba(102, 163, 255, 0.2);
+    outline: none;
+}
+
+.two-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.two-button i {
+    margin-right: 5px;
+    color: #555;
+}
+
+.vip button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.vip button:hover {
+    background: #e68900;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------*/
+
+.under-header {
+    background: #fbead5;
+    /* nền trắng (hoặc đổi màu theo ý) */
+    border-bottom: 1px solid #ddd;
+    /* gạch phân cách dưới */
+}
+
+.under-header ul {
+    display: flex;
+    justify-content: center;
+    /* căn giữa các mục */
+    gap: 30px;
+    /* khoảng cách giữa các mục */
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.under-header li {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    color: #333;
+    font-weight: 500;
+}
+
+.under-header li:hover {
+    background: #fbead5;
+    /* hover màu cam nhạt cho hợp header */
+    color: #d35400;
+    /* chữ đậm hơn khi hover */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------*/
+
+.banner {
+    text-align: center;
+    padding: 20px 0;
+    background: #194b8b;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.five-buttons ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.five-buttons li {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+    border: #ccc;
+    border-radius: 5px;
+}
+
+.five-buttons li img {
+    width: 224px;
+    height: 143.395px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+.five-buttons li p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c93c5;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.five-buttons li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.highlight {
+    background: #f9f9f9;
+    /* nền nhạt */
+    padding: 30px 20px;
+}
+
+.four-buttons ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* khoảng cách hợp lý giữa các item */
+    list-style: none;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    flex-wrap: wrap;
+    /* responsive xuống hàng */
+}
+
+.four-buttons li {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    /* tăng rộng cho ảnh vừa vặn */
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.four-buttons li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.four-buttons li img {
+    width: 100%;
+    /* ảnh full li */
+    height: auto;
+    /* giữ tỉ lệ */
+    max-height: 180px;
+    /* giữ độ cao tương tự trước */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.four-buttons li p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.under-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    padding: 0 5px;
+}
+
+.under-button div:first-child p {
+    margin: 2px 0;
+    /* khoảng cách nhỏ giữa 2 dòng text */
+}
+
+.under-button div:last-child {
+    font-size: 18px;
+    /* icon lớn hơn text */
+    color: #555;
+}
